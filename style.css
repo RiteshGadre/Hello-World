@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 10px;
+    right: -200px;
+    
+}
+
+.navbar {
+    /* display: flex; */
+    display: none;
+    justify-content: space-between;
+    list-style: none;
+    gap: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+@media(min-width:500px) {
+    button {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+    
+    }
+    
+}
